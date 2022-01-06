@@ -170,7 +170,6 @@ void runPhilosopherLoop(){
                 table->riceAmount -= 100;
                 table->eatenRiceAmount += 100;
                 philosopher->state = 2;
-                printf("--time--> %d\n",philosopher->eatingTime);
                 sleep(philosopher->eatingTime);
             }else if(philosopher->state == 2){
                 philosopher->state = 1;
